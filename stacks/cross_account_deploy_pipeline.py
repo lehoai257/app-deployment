@@ -155,7 +155,7 @@ class CrossAccountDeployPipelines:
         pipeline_name = pipeline_name_override or f"cdkpipeline-{app_qualified_name}"
         pipeline_name = pipeline_name.replace("/", "-")
 
-        repository_name = repository_name_override or f"cdk-{self.config.app_name}"
+        repository_name = repository_name_override or f"{self.config.app_name}"
         repository_branch_suffix = repository_branch_suffix_override or target_environment_name
         repository_branch = "deploy/dev"
 
