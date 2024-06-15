@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+  pre_build:
+    commands:
+      - echo testing..
+  build:
+    commands:
+      - echo testing completed on `date`
+      - mvn test

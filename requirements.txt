@@ -1,0 +1,4 @@
+aws-cdk-lib==2.146.0
+cdk-nag==2.22.35
+constructs==10.0.5
+PyYAML==5.4.1

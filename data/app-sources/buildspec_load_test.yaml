@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+  pre_build:
+    commands:
+      - echo Load testing..
+  build:
+    commands:
+      - echo test completed on `date`
+      # Run load tests using JMeter or Locust

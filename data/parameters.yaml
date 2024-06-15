@@ -1,0 +1,26 @@
+regions:
+  - region: ap-northeast-1 #change aws region
+    accountId: "123456789" #change aws account ID
+
+appConfig:
+  appName: "web01"
+  portHttp: 80
+  repository: "example-app"
+  branch: "deploy/dev"
+
+webhookUrlSlack: "https://hooks.slack.com/services/T0417U1CL5T/B078876876876"  #change webhook url slack
+
+accounts:
+  "repository-account":
+    alias: "cdk-repo"
+  "pipeline-account":
+    alias: "cdk-pipeline"
+  "dev":
+    alias: "cdk-dev"
+    cidr: "10.0.0.0/20" #có thể thay đổi IP này
+  "staging":
+    alias: "cdk-staging"
+    cidr: "10.1.0.0/20" #có thể thay đổi IP này
+  "production":
+    alias: "cdk-production"
+    cidr: "10.10.0.0/20" #có thể thay đổi IP này

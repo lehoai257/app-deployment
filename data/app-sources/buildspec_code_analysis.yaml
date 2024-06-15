@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto17
+  pre_build:
+    commands:
+      - echo Static Code Analysis and Security Scanning..
+  build:
+    commands:
+      - echo scan completed on `date`
+      # mvn sonar:sonar
