@@ -10,7 +10,7 @@ from stacks.stages_pipeline import DeployStagePipeline
 
 
 PROJECT_NAME = "ecs-demo"
-APP_NAME = "aws-cdk"
+APP_NAME = "app-deployment"
 
 app = App()
 param = load_parameters()
