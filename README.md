@@ -139,12 +139,12 @@ Việc triển khai IaC sẽ taọ ra các AWS codePipeline pipeline, mỗi môi
             ```
 
 4.2 Deploy Infras cho môi trường Development, Staging, Production 
-    - Chạy lệnh: 
-     ```
-        cdk deploy meta-pipeline-dev-{aws-region}/Pipeline meta-pipeline-staging-{aws-region}/Pipeline meta-pipeline-production-{aws-region}/Pipeline //thay đổi {aws-region}
-     ```
-    - Sau khi chạy câu lệnh, AWS CDK sẽ tạo 3 pipeline (tương ứng từng môi trường) trên AWS codePipeline (pipeline này có nhiệm vụ tạo ra một pipeline khác cho mục đích deploy Infras cho từng môi trường)
-    - Hãy truy cập vào AWS CodePipeline để theo dõi trạng thái của những pipeline cũng như manual approval việc triển khai resource
+- Chạy lệnh: 
+ ```
+    cdk deploy meta-pipeline-dev-{aws-region}/Pipeline meta-pipeline-staging-{aws-region}/Pipeline meta-pipeline-production-{aws-region}/Pipeline //thay đổi {aws-region}
+ ```
+- Sau khi chạy câu lệnh, AWS CDK sẽ tạo 3 pipeline (tương ứng từng môi trường) trên AWS codePipeline (pipeline này có nhiệm vụ tạo ra một pipeline khác cho mục đích deploy Infras cho từng môi trường)
+- Hãy truy cập vào AWS CodePipeline để theo dõi trạng thái của những pipeline cũng như manual approval việc triển khai resource
 
 pipeline development:
 ![alt text](./images/3.png)
